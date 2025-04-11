@@ -1,0 +1,44 @@
+# requirements.txt for CyberGuard AI - National Cyber Crime Reporting Portal
+# This file lists all Python dependencies required to run the application.
+# Versions are specified where necessary to ensure compatibility with the code.
+# Ensure you have Python 3.8+ installed before running 'pip install -r requirements.txt'.
+
+# Core web framework for building the interactive UI
+streamlit==1.35.0
+
+# Google Generative AI SDK for AI-powered responses and transcriptions
+google-generativeai==0.7.2
+
+# Speech recognition library for converting audio to text
+SpeechRecognition==3.10.0
+# PyAudio is a dependency for microphone input in SpeechRecognition
+PyAudio==0.2.11  # Ensure this version is compatible with your Python version
+
+# PDF generation library for complaint reports
+reportlab==4.0.0
+
+# Streamlit option menu for sidebar navigation
+streamlit-option-menu==0.3.2
+
+# Supabase client for database operations
+supabase==2.0.0
+# HTTPX is a dependency for Supabase
+httpx==0.24.1
+
+# Audio processing library for sound detection
+pydub==0.25.1
+
+# Optional dependencies for enhanced functionality:
+# - Numerical computations (if required by future features)
+numpy==1.26.0  
+# - Data handling and analytics (for extended data features)
+pandas==2.2.0  
+
+# Notes:
+# - Google Generative AI SDK requires an API key configured in your environment.
+# - PyAudio may need to be installed using system-specific commands:
+#   - macOS: `brew install portaudio`, then `pip install pyaudio`
+#   - Linux: Install `portaudio` development libraries via your package manager.
+#   - Windows: Download the precompiled PyAudio wheels from an official source.
+# - Consider adding `gunicorn` for production deployment (e.g., gunicorn==22.0.0).
+# - Use virtual environments to isolate dependencies and prevent conflicts.
