@@ -189,5 +189,9 @@ complaints (ticket_id, category, status, evidence)
 - Google Gemini Team  
 - Streamlit Developers  
 - Supabase Community  
+<<<<<<< HEAD
 - Python Software Foundation  
 
+=======
+- Python Software Foundation
+>>>>>>> 0e55e96e4cf03d45625326a343d8614230927721
